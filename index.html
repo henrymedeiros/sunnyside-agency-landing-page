@@ -8,19 +8,75 @@
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
+
+
+  <!-- BOOTSTRAP CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+    *{margin:0;box-sizing:border-box;}
+    .hero{
+      width:100%;
+      height:100vh;
+      background: url(images/desktop/image-header.jpg) no-repeat center center fixed; 
+      background-size: cover;
+    }
+
+    .hero h1{
+      font-family: 'Fraunces', serif;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-weight: 900;
+      font-size: 3.5rem;
+      padding: 8rem 0;
+    }
+
+
+    .hero .title img{
+      width:42px;
+    }
+
+    .hero ul {
+      list-style:none;
+      margin: 0;
+    }
+
+    .hero ul li{
+      margin-right: 3rem;
+      color: #fff
+      
+    }
+
+    .hero nav{
+      height: 80px;
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <header class='hero d-flex flex-column'>
+    <nav class='d-flex container justify-content-between align-items-center pt-3'>
+      <img src="images/logo.svg" alt="logo" >
+      <ul class='d-flex align-items-center'>
+        <li><a href='#'>About</a></li>
+        <li> <a href='#'>Services</a></li>
+        <li> <a href='#'>Projects</a></li>
+        <button>Contact</button>
+      </ul>
+  </nav>
+  <h1 class='text-center'>We are creatives</h1>
+  <div class='title d-flex flex-column justify-content-between align-items-center'>
+    <img src="images/icon-arrow-down.svg" alt="">
+  </div>
+  </header>
 
-  We are creatives
+  
+  
 
   Transform your brand
 
@@ -33,7 +89,7 @@
 
   Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
 
-  Learn more
+  Learn more 
 
   Graphic design
   Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
