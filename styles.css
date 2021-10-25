@@ -10,7 +10,7 @@
 :root{
     /* primary */ 
     --soft-red: hsl(7, 99%, 70%);
-    --yellow:  hsl(51, 100%, 49%); 
+    --yellow:  hsl(51, 100%, 49%);
     --dark-cyan: hsl(167, 40%, 24%);
     --dark-blue: hsl(198, 62%, 26%);
     --dark-moderate-cyan: hsl(168, 34%, 41%);
@@ -164,6 +164,120 @@ p{
 }
 
 
+.testimonials{
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonials .c-col{
+    padding: 0 40px;
+}
+
+.testimonials h3{
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    margin-bottom: 5.5rem;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    color:var(--grayish-blue)
+}
+
+.testimonials img{
+    border-radius: 100%;
+    width: 18%;
+    margin-bottom: 2.5rem;
+}
+
+.testimonials p{
+    color:var(--dark-grayish-blue)
+}
+
+.testimonials .person-name{
+    font-family: 'Fraunces', serif;
+    color:var(--dark-desaturated-blue)
+}
+
+.testimonials .person-role{
+    color:var(--grayish-blue)
+}
+
+.bottom-gallery{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    
+}
+
+.bottom-gallery .bottom-gallery-item{
+    width:25%;
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+footer{
+    height: 40vh;
+    background-color: #90D4C5;
+    color:var(--dark-cyan);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-content .footer-logo{
+    width: 70%;
+    margin-bottom: 2.5rem;
+    fill: var(--dark-cyan);
+}
+
+footer .footer-content .footer-links{
+    margin-bottom: 5rem;
+}
+
+footer .footer-content .footer-links a{
+    margin-right: 3rem;
+    margin-bottom: 5rem;
+    color:var(--dark-cyan);
+}
+
+footer .footer-content .footer-links a:last-child{
+    margin: 0;
+}
+
+footer .footer-content .social-icons a{
+    margin-right: 1.5rem;
+}
+
+footer .footer-content .social-icons a:last-child{
+    margin: 0;
+}
+
+
+.item-1{
+    background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+}
+.item-2{
+    background-image: url(images/desktop/image-gallery-orange.jpg);
+}
+.item-3{
+    background-image: url(images/desktop/image-gallery-cone.jpg);
+}
+.item-4{
+    background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -185,5 +299,9 @@ p{
 
     header > nav > ul{
         display: none !important;
+    }
+
+    .bottom-gallery .bottom-gallery-item{
+        width:50%;
     }
 }
